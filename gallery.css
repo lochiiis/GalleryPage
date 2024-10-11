@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu','Times New Roman';
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+ /* nav  */
+ .navbar {
+    overflow: hidden;
+    background-color: #333333cb;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    
+
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.logo{
+    cursor: pointer;
+    height: 60px;
+    opacity:50% ;
+    width: 135px;
+    margin-left:-50px;
+    border-radius: 10%;
+}
+
+.nav-link{
+    flex:1;
+    text-align:right;
+}
+
+.nav-link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-link ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-link ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #e73c2f;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-link ul li :hover::after {
+    width: 100%;
+}
+
+
+
+
+/*footer css*/
+
+footer{
+    background-color: rgba(3, 25, 12, 0.879);
+    
+}
+
+.footercontainer{
+    width: 100%;
+    padding: 20px 30px 2px;
+}
+.footerDes{
+    text-align: center;
+    font-size: larger;
+    opacity: 0.7;
+}
+
+hr{
+    border: 0.5px solid #ffffffa8;
+}
+
+.footerNav{
+    margin: 25px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+
+}
+
+.footerNav ul li a{
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    font-size: 1.3em;
+    opacity: 0.9;
+    transition: 0.5s;
+    text-decoration: none;
+
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: black;
+    padding: 2px;
+    text-align: center ;
+}
+
+.footerBottom p {
+    color: white;
+}
+.footerul{
+    list-style-type: none;
+}
+.socials{
+    font-size: large;
+}
+.icons{
+    background-color: #3e553aec;
+    padding:1px 1px 1px 1px;
+    border-radius: 5px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.heading{
+    text-align: center;
+    padding-top: 280px;
+    height: 98vh;
+    background: linear-gradient(to right, #000000, #222c25); /* Define the gradient */
+    -webkit-background-clip: text; /* Clip the background to the text -relies on text being transparent*/
+    color: transparent; 
+    font-size:220%;
+    text-shadow: 2px 2px 1px rgba(26, 104, 65, 0.319); /* Adds a shadow below text */
+
+
+    
+}
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#img1,#img2,#img3,#img3,#img4,#img5,#img6{
+    width: 300px;
+    height: 300px;
+    border: 1px #ffffffa2 solid;
+}
+
+.image{
+    display: inline;
+    padding: 10px 5px;
+  
+}
+
+.images{
+    background-color: rgba(17, 17, 17, 0.87);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    height: auto;
+    border-radius: 4px;
+}
+
+.images h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.image img:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: 0.3s;
+
+}
+
+#des1,#des2,#des3,#des3,#des4,#des5,#des6{
+   display: none;
+}
+
+.largeImage{
+    display: none;
+    height: auto;
+    padding: 50px 100px;
+    background-color: rgba(0, 0, 0, 0.918);
+    position: relative;
+}
+.color #close-icon{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    text-align: right;
+    font-size:larger;
+    cursor: pointer;
+
+}
+
+#expandedImage{
+    border: 1.5px #ffffffd2 solid;
+    width: 420px;
+    height: 420px;
+    margin-left: 80px;
+    margin-top: 5px;
+}
+
+#description{
+    color: rgba(255, 255, 255, 0.884);
+    font-size: 20px;
+    width: 50%;
+    float: left;
+    text-align: left;
+
+}
+
+#description h3{
+    padding: 30px 0;
+}
+.links{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.699);
+    font-size:medium;
+}
+
+.links:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
